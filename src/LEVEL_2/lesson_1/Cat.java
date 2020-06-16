@@ -24,30 +24,30 @@ class Cat implements Abilities{
         return type + " " + name + " is jumping";
     }
     @Override
-    public String run(Discipline discipline) {
+    public String run(Obstacle obstacle) {
         String result;
-        if (discipline.getDistance() > maxDistance) {
+        if (obstacle.getDistance() > maxDistance) {
             result = "Ran unsuccessfully!";
             passed = false;
         }
         else result = "Successfully ran!";
-        return run() + " on the " + discipline.getName() + ". " + result;
+        return run() + " on the " + obstacle.getName() + ". " + result;
     }
     @Override
-    public String jump(Discipline discipline) {
+    public String jump(Obstacle obstacle) {
         String result;
-        if (discipline.getHeight() > maxHeight) {
+        if (obstacle.getHeight() > maxHeight) {
             result = "Jumped unsuccessfully!";
             passed = false;
         }
         else result = "Successfully jumped!";
-        return jump() + " over the " + discipline.getName() + ". " + result;
+        return jump() + " over the " + obstacle.getName() + ". " + result;
     }
 
     @Override
-    public void move(Discipline discipline) {
-        if (discipline.isRunuble()) System.out.println(run(discipline));
-        else System.out.println(jump(discipline));
+    public void move(Obstacle obstacle) {
+        if (obstacle.isRunuble()) System.out.println(run(obstacle));
+        else System.out.println(jump(obstacle));
     }
 
     @Override

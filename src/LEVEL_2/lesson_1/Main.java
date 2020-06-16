@@ -2,14 +2,14 @@ package LEVEL_2.lesson_1;
 
 public class Main {
     /**
-     * Цикл для запуска и проверки и вывода в консоль.
+     * Цикл для запуска, проверки и вывода в консоль.
      */
-    private static void exam(Abilities[] person, Discipline[] discipline) {
+    private static void exam(Abilities[] person, Obstacle[] obstacle) {
         for (int i = 0; i < person.length; i++) {
             if (!person[i].isPassed()) break;
-            for (int j = 0; j < discipline.length; j++) {
+            for (int j = 0; j < obstacle.length; j++) {
                 if (!person[i].isPassed()) break;
-                person[i].move(discipline[j]);
+                person[i].move(obstacle[j]);
             }
         }
     }
@@ -23,13 +23,13 @@ public class Main {
                 new Robot("Bender", 1000,1000),
                 new Robot("Robocop", 400, 0)
         };
-        Discipline[] discipline = {
+        Obstacle[] obstacle = {
                 new Treadmill("treadmill 1", 100),
                 new Treadmill("treadmill 2", 400),
                 new Wall("wall 1", 1),
                 new Wall("wall 2", 2)
         };
 
-        exam(person, discipline);
+        exam(person, obstacle);
     }
 }

@@ -1,6 +1,11 @@
 package LEVEL_2.lesson_1;
 
-abstract class Discipline {
+/**
+ * Родитель классов Беговая дорожка и Стена.
+ * Служит для тех же целей, что и класс Abilities, но с возможностью промисать тело в классах.
+ * Все методы класса служат для инкапсуляции параметров.
+ */
+abstract class Obstacle {
     private String name;
     private boolean runuble;
     private int distance;
