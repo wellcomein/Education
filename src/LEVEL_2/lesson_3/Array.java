@@ -1,6 +1,10 @@
 package LEVEL_2.lesson_3;
 
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * Чтобы раскрыть тему урока решение будет реализовано с помощью методов LinkedHashMap,
@@ -24,6 +28,17 @@ class Array {
         return hashMap;
     }
 
+    /**
+     * Второе решение этой задачи от преподавателя
+     */
+    private static Map<String, Integer> distinctWord(String[] array) {
+        Map<String, Integer> statistic = new HashMap<>();
+        for (String word:array) {
+            statistic.put(word, statistic.getOrDefault(word, 0)+1);
+        }
+        return statistic;
+    }
+
     public static void main (String[] args) {
         array = new String[]{
                 "Создать", "массив", "с", "набором", "слов", "(", "10-20 ", "слов", "должны", "встречаться",
@@ -33,5 +48,6 @@ class Array {
         };
 
         System.out.println(count(array));
+        System.out.println(distinctWord(array));
     }
 }
