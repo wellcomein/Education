@@ -2,9 +2,6 @@ package LEVEL_2.lesson_4;
 
 import javax.swing.*;
 import java.awt.*;
-
-import static java.awt.Color.lightGray;
-
 /**
  * Класс Окно отрисовывает окно.
  * В качестве праметра класса созается ссылка на объект класса Компонент,
