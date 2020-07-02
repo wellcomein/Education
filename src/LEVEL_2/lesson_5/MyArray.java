@@ -5,7 +5,6 @@ import java.util.Arrays;
 class MyArray {
     private static final int SIZE = 10_000_000;
     private static final int HALF = SIZE / 2;
-    private static float[] array = new float[SIZE];
 
     public static void main(String[] args) {
         printResult(method_1(getArray()));
