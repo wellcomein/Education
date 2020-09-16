@@ -1,6 +1,6 @@
-package LEVEL_1.lesson_4.home_tusk;
+package LEVEL_1.lesson_4.homeTask;
 
-public class Dog extends Животное {
+public class Dog extends Animal {
 
     public Dog(double run, double swim, double jump) {
         super(run, swim, jump);

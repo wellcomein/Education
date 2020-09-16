@@ -1,6 +1,6 @@
-package LEVEL_1.lesson_5.home_tusk;
+package LEVEL_1.lesson_5.homeTask;
 
-import LEVEL_1.lesson_4.home_tusk.Cat;
+import LEVEL_1.lesson_4.homeTask.Cat;
 
 // 1. Класс кота из прошлого ДЗ расширить функционалом потребления пищи.
 // У каждого кота есть аппетит, т.е. количество еды, которое он съедает за один раз;
@@ -21,20 +21,14 @@ class SuperCat extends Cat{
     }
 
     protected int Eating(int FOOD) {
-        if(FOOD >= appetite && satiety == false) {
+        if(FOOD >= appetite && !satiety) {
             FOOD = FOOD - appetite;
             this.satiety = true;
         }
         return FOOD;
     }
     protected void isHungry() {
-        if (this.satiety == false) System.out.println(this.name + " is hungry.");
+        if (!this.satiety) System.out.println(this.name + " is hungry.");
         else System.out.println(this.name + " is full.");
     }
-/*
-    Eating eating;
-    int doSometing() {
-        return eating.getInfo_about_Bowl();
-    }
-*/
 }

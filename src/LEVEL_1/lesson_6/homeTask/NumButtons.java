@@ -1,4 +1,4 @@
-package LEVEL_1.lesson_6.home_tusk;
+package LEVEL_1.lesson_6.homeTask;
 
 import javax.swing.*;
 

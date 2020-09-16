@@ -1,4 +1,4 @@
-package LEVEL_1.lesson_5.home_tusk;
+package LEVEL_1.lesson_5.homeTask;
 
 import java.util.Scanner;
 
@@ -25,16 +25,14 @@ public class Bowl implements Eating {
 
     protected String setName_of_Owner() {
         System.out.print("Who is the owner of the bowl? ");
-        String answer = userInput.nextLine();
-        return answer;
+        return userInput.nextLine();
 
     }
 
     @Override
     public int setVolume_of_Bowl() {
         System.out.print("What is the volume of bowl? ");
-        int answer = userInput.nextInt();
-        return answer;
+        return userInput.nextInt();
     }
 
     @Override

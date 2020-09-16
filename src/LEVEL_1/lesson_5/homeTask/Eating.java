@@ -1,4 +1,4 @@
-package LEVEL_1.lesson_5.home_tusk;
+package LEVEL_1.lesson_5.homeTask;
 
 interface Eating {
 

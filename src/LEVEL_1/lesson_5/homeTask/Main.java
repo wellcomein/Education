@@ -1,4 +1,4 @@
-package LEVEL_1.lesson_5.home_tusk;
+package LEVEL_1.lesson_5.homeTask;
 /*
 Задачи на взаимодействие классов:
 + 1. Класс кота из прошлого ДЗ расширить функционалом потребления пищи. У каждого кота есть аппетит, т.е. количество еды, которое он съедает за один раз;
@@ -29,8 +29,8 @@ public class Main {
         superCat[2] = new SuperCat("Alien", 40, 40,40,40);
 
         // how looks our cats
-        for (int i = 0; i < superCat.length; i++) {
-            superCat[i].SuperCatInfo();
+        for (SuperCat cat : superCat) {
+            cat.SuperCatInfo();
         }
 
         // buying the bowl for cats
@@ -54,9 +54,9 @@ public class Main {
             is_cats_full = true; // need for do-while
             for (int i = 0; i < superCat.length; i++) {
                 superCat[i].isHungry();
-                if (superCat[i].satiety == false) is_cats_full = false;
+                if (!superCat[i].satiety) is_cats_full = false;
             }
         }
-        while (is_cats_full == false);
+        while (!is_cats_full);
     }
 }

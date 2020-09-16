@@ -1,10 +1,10 @@
-package LEVEL_1.lesson_6.home_tusk;
+package LEVEL_1.lesson_6.homeTask;
 
 import javax.swing.*;
 
-public class MyWindow {
+class MyWindow {
 
-    public static void MyWindow() {
+    static void myWindow() {
         // Создаём окно
         JFrame myWindow = new JFrame("My calculator v. 2.0");
         // Задаём размер окна
